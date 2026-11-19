@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="upper_assembly">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.00029164 -0.04352822 0.10655238" rpy="0 0 0"/>
+      <mass value="5.44648552"/>
+      <inertia ixx="0.12255918" ixy="0.00009548" ixz="-0.00013804" iyy="0.07726871" iyz="-0.02577651" izz="0.07606326"/>
+    </inertial>
+    <visual name="rack_link_visual">
+      <origin xyz="0.03388044 -0.25086503 0.60456839" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <visual name="extension_link_visual">
+      <origin xyz="-0.20720844 0.1159434 0.49151" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <visual name="arm2_link_visual">
+      <origin xyz="-0.22128782 0.13700738 0.60401" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/arm2_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <visual name="arm1_link_visual">
+      <origin xyz="0.06910373 0.06168976 0.55701" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/arm1_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <visual name="lift_link_visual">
+      <origin xyz="0.00000026 0.07587158 0.41395" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/lift_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <visual name="base_link_visual">
+      <geometry>
+        <mesh filename="./meshes/base_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <collision name="rack_link_collision_01">
+      <origin xyz="0.03388044 -0.25086503 0.60456839" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="rack_link_collision_02">
+      <origin xyz="0.03388044 -0.25086503 0.60456839" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_01">
+      <origin xyz="-0.20720844 0.1159434 0.49151" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_02">
+      <origin xyz="-0.20720844 0.1159434 0.49151" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_03">
+      <origin xyz="-0.20720844 0.1159434 0.49151" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_03.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_04">
+      <origin xyz="-0.20720844 0.1159434 0.49151" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_04.obj"/>
+      </geometry>
+    </collision>
+    <collision name="arm2_link_collision_01">
+      <origin xyz="-0.22128782 0.13700738 0.60401" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/arm2_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="arm1_link_collision_01">
+      <origin xyz="0.06910373 0.06168976 0.55701" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/arm1_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="arm1_link_collision_02">
+      <origin xyz="0.06910373 0.06168976 0.55701" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/arm1_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+    <collision name="lift_link_collision_01">
+      <origin xyz="0.00000026 0.07587158 0.41395" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/lift_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="lift_link_collision_02">
+      <origin xyz="0.00000026 0.07587158 0.41395" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/lift_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+    <collision name="lift_link_collision_03">
+      <origin xyz="0.00000026 0.07587158 0.41395" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/lift_link_collision_03.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_01">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_02">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_03">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_03.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_04">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_04.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_05">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_05.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_06">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_06.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_07">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_07.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_08">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_08.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_09">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_09.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_10">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_10.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_11">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_11.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_12">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_12.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_13">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_13.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_14">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_14.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_15">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_15.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_16">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_16.obj"/>
+      </geometry>
+    </collision>
+    <collision name="base_link_collision_17">
+      <geometry>
+        <mesh filename="./meshes/base_link_collision_17.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="lift_link">
+    <inertial>
+      <origin xyz="-0.00374053 -0.09788097 -0.04808906" rpy="0 0 0"/>
+      <mass value="4.59960508"/>
+      <inertia ixx="0.14785815" ixy="-0.00184353" ixz="-0.0027454" iyy="0.09633921" iyz="0.01113882" izz="0.10450742"/>
+    </inertial>
+    <visual name="rack_link_visual">
+      <origin xyz="0.03388018 -0.32673662 0.19061839" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <visual name="extension_link_visual">
+      <origin xyz="-0.2072087 0.04007181 0.07756" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <visual name="arm2_link_visual">
+      <origin xyz="-0.22128808 0.06113579 0.19006" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/arm2_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <visual name="arm1_link_visual">
+      <origin xyz="0.06910348 -0.01418183 0.14306" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/arm1_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <visual name="lift_link_visual">
+      <geometry>
+        <mesh filename="./meshes/lift_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <collision name="rack_link_collision_01">
+      <origin xyz="0.03388018 -0.32673662 0.19061839" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="rack_link_collision_02">
+      <origin xyz="0.03388018 -0.32673662 0.19061839" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_01">
+      <origin xyz="-0.2072087 0.04007181 0.07756" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_02">
+      <origin xyz="-0.2072087 0.04007181 0.07756" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_03">
+      <origin xyz="-0.2072087 0.04007181 0.07756" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_03.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_04">
+      <origin xyz="-0.2072087 0.04007181 0.07756" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_04.obj"/>
+      </geometry>
+    </collision>
+    <collision name="arm2_link_collision_01">
+      <origin xyz="-0.22128808 0.06113579 0.19006" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/arm2_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="arm1_link_collision_01">
+      <origin xyz="0.06910348 -0.01418183 0.14306" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/arm1_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="arm1_link_collision_02">
+      <origin xyz="0.06910348 -0.01418183 0.14306" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/arm1_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+    <collision name="lift_link_collision_01">
+      <geometry>
+        <mesh filename="./meshes/lift_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="lift_link_collision_02">
+      <geometry>
+        <mesh filename="./meshes/lift_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+    <collision name="lift_link_collision_03">
+      <geometry>
+        <mesh filename="./meshes/lift_link_collision_03.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm1_link">
+    <inertial>
+      <origin xyz="-0.01678295 0.0220594 -0.01103434" rpy="0 0 0"/>
+      <mass value="0.9885599"/>
+      <inertia ixx="0.00258584" ixy="0.00425215" ixz="0.00241956" iyy="0.02803829" iyz="-0.00013708" izz="0.02816949"/>
+    </inertial>
+    <visual name="rack_link_visual">
+      <origin xyz="-0.03522329 -0.31255479 0.04755839" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <visual name="extension_link_visual">
+      <origin xyz="-0.27631217 0.05425364 -0.0655" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <visual name="arm2_link_visual">
+      <origin xyz="-0.29039155 0.07531762 0.047" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/arm2_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <visual name="arm1_link_visual">
+      <geometry>
+        <mesh filename="./meshes/arm1_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <collision name="rack_link_collision_01">
+      <origin xyz="-0.03522329 -0.31255479 0.04755839" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="rack_link_collision_02">
+      <origin xyz="-0.03522329 -0.31255479 0.04755839" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_01">
+      <origin xyz="-0.27631217 0.05425364 -0.0655" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_02">
+      <origin xyz="-0.27631217 0.05425364 -0.0655" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_03">
+      <origin xyz="-0.27631217 0.05425364 -0.0655" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_03.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_04">
+      <origin xyz="-0.27631217 0.05425364 -0.0655" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_04.obj"/>
+      </geometry>
+    </collision>
+    <collision name="arm2_link_collision_01">
+      <origin xyz="-0.29039155 0.07531762 0.047" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/arm2_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="arm1_link_collision_01">
+      <geometry>
+        <mesh filename="./meshes/arm1_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="arm1_link_collision_02">
+      <geometry>
+        <mesh filename="./meshes/arm1_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm2_link">
+    <inertial>
+      <origin xyz="0.02218994 -0.03317434 -0.08438185" rpy="0 0 0"/>
+      <mass value="0.31611991"/>
+      <inertia ixx="0.00185918" ixy="0.00101657" ixz="0.00019715" iyy="0.00101736" iyz="-0.00029501" izz="0.00225561"/>
+    </inertial>
+    <visual name="rack_link_visual">
+      <origin xyz="0.25516827 -0.38787241 0.00055839" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <visual name="extension_link_visual">
+      <origin xyz="0.01407939 -0.02106398 -0.1125" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <visual name="arm2_link_visual">
+      <geometry>
+        <mesh filename="./meshes/arm2_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <collision name="rack_link_collision_01">
+      <origin xyz="0.25516827 -0.38787241 0.00055839" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="rack_link_collision_02">
+      <origin xyz="0.25516827 -0.38787241 0.00055839" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_01">
+      <origin xyz="0.01407939 -0.02106398 -0.1125" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_02">
+      <origin xyz="0.01407939 -0.02106398 -0.1125" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_03">
+      <origin xyz="0.01407939 -0.02106398 -0.1125" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_03.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_04">
+      <origin xyz="0.01407939 -0.02106398 -0.1125" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_04.obj"/>
+      </geometry>
+    </collision>
+    <collision name="arm2_link_collision_01">
+      <geometry>
+        <mesh filename="./meshes/arm2_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="extension_link">
+    <inertial>
+      <origin xyz="0.19662635 -0.29310668 0.00502061" rpy="0 0 0"/>
+      <mass value="0.38748688"/>
+      <inertia ixx="0.00321905" ixy="0.00205933" ixz="-0.00009688" iyy="0.00154419" iyz="0.00013401" izz="0.00460475"/>
+    </inertial>
+    <visual name="rack_link_visual">
+      <origin xyz="0.43893134 -0.00340001 0.11305838" rpy="0 0 0.98158766"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <visual name="extension_link_visual">
+      <origin xyz="0 -0 -0" rpy="0 0 0.98158766"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <collision name="rack_link_collision_01">
+      <origin xyz="0.43893134 -0.00340001 0.11305838" rpy="0 0 0.98158766"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="rack_link_collision_02">
+      <origin xyz="0.43893134 -0.00340001 0.11305838" rpy="0 0 0.98158766"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_01">
+      <origin xyz="0 -0 -0" rpy="0 0 0.98158766"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_02">
+      <origin xyz="0 -0 -0" rpy="0 0 0.98158766"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_03">
+      <origin xyz="0 -0 -0" rpy="0 0 0.98158766"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_03.obj"/>
+      </geometry>
+    </collision>
+    <collision name="extension_link_collision_04">
+      <origin xyz="0 -0 -0" rpy="0 0 0.98158766"/>
+      <geometry>
+        <mesh filename="./meshes/extension_link_collision_04.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="rack_link">
+    <inertial>
+      <origin xyz="0.00543638 -0.00767596 -0.09192301" rpy="0 0 0"/>
+      <mass value="0.06043329"/>
+      <inertia ixx="0.00010578" ixy="0.00000041" ixz="0.00000075" iyy="0.00010543" iyz="0.00000105" izz="0.00000275"/>
+    </inertial>
+    <visual name="rack_link_visual">
+      <origin xyz="0 0.00000001 -0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_visual.obj"/>
+      </geometry>
+    </visual>
+    <collision name="rack_link_collision_01">
+      <origin xyz="0 0.00000001 -0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_collision_01.obj"/>
+      </geometry>
+    </collision>
+    <collision name="rack_link_collision_02">
+      <origin xyz="0 0.00000001 -0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="./meshes/rack_link_collision_02.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lift_slide" type="prismatic">
+    <origin xyz="0.00000026 0.07587159 0.41395" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="lift_link"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="0" upper="0.05" effort="200" velocity="0.05"/>
+    <dynamics friction="0"/>
+    <!-- isaac:source_drive {"armature": 0.0, "drive": {"damping": 0.0, "max_force": 200.0, "stiffness": 0.0, "target_position": 0.0}, "instance": "linear", "source": "physx"} -->
+  </joint>
+  <joint name="shoulder_yaw" type="revolute">
+    <origin xyz="0.06910347 -0.01418183 0.14306" rpy="0 0 0"/>
+    <parent link="lift_link"/>
+    <child link="arm1_link"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.14159265" upper="3.14159265" effort="20" velocity="0.5"/>
+    <dynamics friction="0"/>
+    <!-- isaac:source_drive {"armature": 0.0, "drive": {"damping": 0.0, "max_force": 20.0, "stiffness": 0.0, "target_position": 0.0}, "instance": "angular", "source": "physx"} -->
+  </joint>
+  <joint name="elbow_yaw" type="revolute">
+    <origin xyz="-0.29039156 0.07531762 0.047" rpy="0 0 0"/>
+    <parent link="arm1_link"/>
+    <child link="arm2_link"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.14159265" upper="3.14159265" effort="12" velocity="0.5"/>
+    <dynamics friction="0"/>
+    <!-- isaac:source_drive {"armature": 0.0, "drive": {"damping": 0.0, "max_force": 12.0, "stiffness": 0.0, "target_position": 0.0}, "instance": "angular", "source": "physx"} -->
+  </joint>
+  <joint name="arm_extension" type="prismatic">
+    <origin xyz="0.01407939 -0.02106398 -0.1125" rpy="0 0 -0.98158766"/>
+    <parent link="arm2_link"/>
+    <child link="extension_link"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="0.3260397" upper="0.60000002" effort="30" velocity="0.08"/>
+    <dynamics friction="0"/>
+    <!-- isaac:source_drive {"armature": 0.0, "drive": {"damping": 0.0, "max_force": 30.0, "stiffness": 0.0, "target_position": 0.0}, "instance": "linear", "source": "physx"} -->
+  </joint>
+  <joint name="tool_rack_slide" type="prismatic">
+    <origin xyz="0.43893135 -0.00340002 0.11305839" rpy="0 0 0.98158766"/>
+    <parent link="extension_link"/>
+    <child link="rack_link"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.015" upper="0.015" effort="20" velocity="0.04"/>
+    <dynamics friction="0"/>
+    <!-- isaac:source_drive {"armature": 0.0, "drive": {"damping": 0.0, "max_force": 20.0, "stiffness": 0.0, "target_position": 0.0}, "instance": "linear", "source": "physx"} -->
+  </joint>
+</robot>
